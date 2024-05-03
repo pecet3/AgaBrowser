@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AgaBrowser" xmlns:cef="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="AgaBrowser" Height="720" Width="1280">
+    <Grid Height="663" VerticalAlignment="Top" Margin="0,41,0,0">
         <cef:ChromiumWebBrowser x:Name="HMBK" Address="https://www.google.com/" />
 
     </Grid>
