@@ -55,16 +55,20 @@
             // 
             // Main_Panel
             // 
+            this.Main_Panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Main_Panel.Location = new System.Drawing.Point(12, 38);
             this.Main_Panel.Name = "Main_Panel";
-            this.Main_Panel.Size = new System.Drawing.Size(781, 400);
+            this.Main_Panel.Size = new System.Drawing.Size(769, 520);
             this.Main_Panel.TabIndex = 2;
             // 
             // AgaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.Main_Panel);
             this.Controls.Add(this.URL_Input);
             this.Controls.Add(this.Go_Button);
@@ -72,6 +76,8 @@
             this.Name = "AgaForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aga Browser";
+            this.TransparencyKey = System.Drawing.Color.Aquamarine;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Aga_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

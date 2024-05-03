@@ -24,16 +24,27 @@ namespace AgaBrowserWindowsForm
             browser = new ChromiumWebBrowser(URL_Input.Text);
             browser.Dock = DockStyle.Fill;
             this.Main_Panel.Controls.Add(browser);
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            browser.Load(URL_Input.Text);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            
+        }
 
+        private void test_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            
         }
     }
 }
