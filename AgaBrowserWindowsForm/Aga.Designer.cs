@@ -1,6 +1,6 @@
 ﻿namespace AgaBrowserWindowsForm
 {
-    partial class Aga
+    partial class AgaForm
     {
         /// <summary>
         /// Wymagana zmienna projektanta.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Aga));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgaForm));
             this.Go_Button = new System.Windows.Forms.Button();
             this.URL_Input = new System.Windows.Forms.TextBox();
             this.Main_Panel = new System.Windows.Forms.Panel();
@@ -60,7 +60,7 @@
             this.Main_Panel.Size = new System.Drawing.Size(781, 400);
             this.Main_Panel.TabIndex = 2;
             // 
-            // Aga
+            // AgaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -69,7 +69,7 @@
             this.Controls.Add(this.URL_Input);
             this.Controls.Add(this.Go_Button);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Aga";
+            this.Name = "AgaForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aga Browser";
             this.Load += new System.EventHandler(this.Aga_Load);

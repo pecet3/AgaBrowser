@@ -59,5 +59,15 @@ namespace AgaBrowser.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Icon podobny do zasobu (Ikona).
+        /// </summary>
+        internal static System.Drawing.Icon aga {
+            get {
+                object obj = ResourceManager.GetObject("aga", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
     }
 }

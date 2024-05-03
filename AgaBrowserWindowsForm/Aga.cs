@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CefSharp.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,16 +11,19 @@ using System.Windows.Forms;
 
 namespace AgaBrowserWindowsForm
 {
-    public partial class Aga : Form
+    public partial class AgaForm : Form
     {
-        public Aga()
+        public AgaForm()
         {
             InitializeComponent();
         }
 
+        ChromiumWebBrowser browser;
         private void Aga_Load(object sender, EventArgs e)
         {
-
+            browser = new ChromiumWebBrowser(URL_Input.Text);
+            browser.Dock = DockStyle.Fill;
+            this.Main_Panel.Controls.Add(browser);
         }
 
         private void button1_Click(object sender, EventArgs e)

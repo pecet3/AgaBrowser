@@ -16,7 +16,7 @@ namespace AgaBrowserWindowsForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Aga());
+            Application.Run(new AgaForm());
         }
     }
 }
